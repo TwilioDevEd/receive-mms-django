@@ -29,7 +29,7 @@ To run the app locally:
    [virtualenv](https://virtualenv.pypa.io/en/latest/)
 
    ```bash
-   virtualenv venv
+   virtualenv -p python3 venv
    source venv/bin/activate
    ```
 
