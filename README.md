@@ -96,8 +96,6 @@ To run the app locally:
 
    ![Configure Webhook](http://howtodocs.s3.amazonaws.com/twilio-number-config-all-med.gif)
 
-That's it
-
 1. Check it out at http://localhost:8000
 
 That's it
