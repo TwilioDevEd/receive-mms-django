@@ -6,7 +6,7 @@ class MMSMedia(models.Model):
     mime_type = models.CharField(max_length=30) 
     media_sid = models.CharField(max_length=35)
     message_sid = models.CharField(max_length=35)
-    media_url = models.CharField(max_length=35)
+    media_url = models.CharField(max_length=150)
     content = models.TextField()
 
     def __str__(self):

@@ -21,8 +21,8 @@ function ReceiveMMSController(){
 
   function showImages() {
     $.get('/images').then(function(images) {
-      $('.image-container').append(images.data.map(function(filename) {
-        return '<img width="100%" class="col-md-4" src="/images/' + filename + '"/>';
+      $('.image-container').html(images.data.map(function(media_url) {
+        return '<img width="100%" class="col-md-4" src="' + media_url + '"/>';
       }).join(''));
     });
   }

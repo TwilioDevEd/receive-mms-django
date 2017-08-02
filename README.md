@@ -4,8 +4,9 @@
 
 # Recieve SMS and MMS Messages. Powered by Twilio - Python/Django
 
-[![Build
-Status](https://travis-ci.org/TwilioDevEd/receive-mms-django.svg?branch=master)](https://travis-ci.org/TwilioDevEd/receive-mms-django)
+<!--
+[![Build Status](https://travis-ci.org/TwilioDevEd/receive-mms-django.svg?branch=master)](https://travis-ci.org/TwilioDevEd/receive-mms-django)
+-->
 
 # TODO: update this link
 Use Twilio to receive SMS and MMS messages. For a step-by-step tutorial see

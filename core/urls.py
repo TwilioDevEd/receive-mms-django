@@ -8,7 +8,6 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^config/$', views.config, name='config'),
     url(r'^images/$', views.get_all_media, name='images'),
-    url(r'^images/(?P<filename>[0-9A-Za-z\.]{0,50})$', views.handle_delete_media_file, name='delete_image'),
     url(r'^incoming/$', views.handle_incoming_message, name='incoming'),
 ]
 

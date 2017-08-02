@@ -49,7 +49,7 @@ def delete_media_file(filename=None):
 
 
 def fetch_all_media():
-    return map(lambda mms: mms.filename, MMSMedia.objects.all())
+    return map(lambda mms: mms.media_url, MMSMedia.objects.all())
 
 
 def _twilio_client():
