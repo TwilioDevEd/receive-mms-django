@@ -47,12 +47,19 @@ To run the app locally:
 
    You can find your `TWILIO_ACCOUNT_SID` and `TWILIO_AUTH_TOKEN` in your
    [Twilio Account Settings](https://www.twilio.com/console).
-   You will also need a `TWILIO_PHONE_NUMBER`, which you may find [here](https://www.twilio.com/console/phone-numbers/incoming).
+   You will also need a `TWILIO_PHONE_NUMBER`, which you may find
+   [here](https://www.twilio.com/console/phone-numbers/incoming).
 
 1. Load your environment configurations into your shell session
 
    ```bash
    source .env
+   ```
+
+1. Run the migrations
+
+   ```bash
+   python manage.py migrate
    ```
 
 1. Run the application
@@ -61,17 +68,43 @@ To run the app locally:
    python manage.py runserver
    ```
 
+1. Expose your application to the wider internet using
+   [ngrok](http://ngrok.com/). This step is important because the
+   application won't work as expected if you run it through localhost.
+
+   ```bash
+   ngrok http -host-header=localhost 8000
+   ```
+
+   Once ngrok is running, open up your browser and go to your ngrok URL.
+   It will look something like this: `http://9a159ccf.ngrok.io`
+
+   **Note:** You can read
+   [this blog post](https://www.twilio.com/blog/2015/09/6-awesome-reasons-to-use-ngrok-when-testing-webhooks.html)
+   for more details on how to use ngrok.
+
+1. Configure Twilio to call your webhooks
+
+   You will also need to configure Twilio to call your application when calls
+   are received on your TWILIO_NUMBER. The MMS url should look something
+   like this:
+
+   ```
+   http://6b5f6b6d.ngrok.io/incoming
+   ```
+
+That's it
+
 1. Check it out at http://localhost:8000
 
 That's it
 
-## Run the tests
+## How to Demo
 
-You can run the tests locally by typing
+1. Send an MMS to your twilio number
 
-```bash
-coverage run manage.py test --settings=twilio_sample_project.settings.test
-```
+1. Access http://localhost:8000. You should see a list with all the resources
+   sent through your MMS
 
 ## Meta
 

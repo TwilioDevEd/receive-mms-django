@@ -13,7 +13,7 @@ except ImportError:
     from urlparse import urlparse
 
 
-def reply_with_twiml_message(num_media, from_number, message_sid, media_files):
+def reply_with_twiml_message(message_sid, from_number, num_media, media_files):
     if not from_number or not message_sid:
         raise Exception('Please provide a From Number and a Message Sid')
 
@@ -40,7 +40,7 @@ def reply_with_twiml_message(num_media, from_number, message_sid, media_files):
 
 def delete_media_file(filename=None):
     m = MMSMedia.objects.get(filename=filename)
-    twilio_client().api.messages(m.message_sid) \
+    _twilio_client().api.messages(m.message_sid) \
         .media(m.media_sid) \
         .delete()
     m.delete()
@@ -52,7 +52,7 @@ def fetch_all_media():
     return MMSMedia.objects.all()
 
 
-def twilio_client():
+def _twilio_client():
     account_sid = os.getenv('TWILIO_ACCOUNT_SID')
     auth_token = os.getenv('TWILIO_AUTH_TOKEN')
 

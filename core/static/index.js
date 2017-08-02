@@ -23,7 +23,7 @@ function ReceiveMMSController(){
     $.get('/images').then(function(images) {
       var data = JSON.parse(images.data) || [];
       $('.image-container').append(data.map(function(img) {
-        return '<img width="100%" class="col-md-4" src="/mms_images/' + img + '"/>';
+        return '<img width="100%" class="col-md-4" src="/mms_images/' + img.fields.filename + '"/>';
       }).join(''));
     });
   }

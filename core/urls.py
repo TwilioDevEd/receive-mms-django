@@ -9,7 +9,7 @@ urlpatterns = [
     url(r'^config/$', views.config, name='config'),
     url(r'^images/$', views.get_all_media, name='images'),
     url(r'^images/(?P<filename>\w{0,50})/$', views.delete_media_file, name='delete_image'),
-    url(r'^incoming/$', views.reply_incoming_message, name='incoming'),
+    url(r'^incoming/$', views.handle_incoming_message, name='incoming'),
 ]
 
 if settings.DEBUG:
