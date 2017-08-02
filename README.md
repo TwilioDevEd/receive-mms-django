@@ -9,7 +9,7 @@
 -->
 
 Use Twilio to receive SMS and MMS messages. For a step-by-step tutorial see
-the [Twilio docs] (https://www.twilio.com/docs/guides/receive-and-download-images-incoming-mms-messages-python-django).
+the [Twilio docs](https://www.twilio.com/docs/guides/receive-and-download-images-incoming-mms-messages-python-django).
 
 ## Local development
 
