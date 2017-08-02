@@ -2,7 +2,7 @@
   <img src="https://static0.twilio.com/marketing/bundles/marketing/img/logos/wordmark-red.svg" alt="Twilio" width="250" />
 </a>
 
-# Recieve SMS and MMS Messages. Powered by Twilio - Python/Django
+# Recieve and Download Images on incoming MMS Messages. Powered by Twilio - Python/Django
 
 <!--
 [![Build Status](https://travis-ci.org/TwilioDevEd/receive-mms-django.svg?branch=master)](https://travis-ci.org/TwilioDevEd/receive-mms-django)
