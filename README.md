@@ -8,9 +8,8 @@
 [![Build Status](https://travis-ci.org/TwilioDevEd/receive-mms-django.svg?branch=master)](https://travis-ci.org/TwilioDevEd/receive-mms-django)
 -->
 
-# TODO: update this link
 Use Twilio to receive SMS and MMS messages. For a step-by-step tutorial see
-[twilio docs] (https://www.twilio.com/docs/tutorials/receive-mms-python-and-django).
+the [Twilio docs] (https://www.twilio.com/docs/guides/receive-and-download-images-incoming-mms-messages-python-django).
 
 ## Local development
 
