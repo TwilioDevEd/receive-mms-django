@@ -94,6 +94,8 @@ To run the app locally:
    http://6b5f6b6d.ngrok.io/incoming
    ```
 
+   ![Configure Webhook](http://howtodocs.s3.amazonaws.com/twilio-number-config-all-med.gif)
+
 That's it
 
 1. Check it out at http://localhost:8000
