@@ -91,7 +91,7 @@ To run the app locally:
    like this:
 
    ```
-   http://6b5f6b6d.ngrok.io/incoming
+   http://6b5f6b6d.ngrok.io/incoming/
    ```
 
    ![Configure Webhook](http://howtodocs.s3.amazonaws.com/twilio-number-config-all-med.gif)
