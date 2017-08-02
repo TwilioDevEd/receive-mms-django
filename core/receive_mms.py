@@ -21,7 +21,7 @@ def reply_with_twiml_message(message_sid, from_number, num_media, media_files):
         file_extension = mimetypes.guess_extension(mime_type)
         media_sid = os.path.basename(urlparse(media_url).path)
         content = requests.get(media_url).text
-        filename = '{sid}.{ext}'.format(sid=media_sid, ext=file_extension)
+        filename = '{sid}{ext}'.format(sid=media_sid, ext=file_extension)
 
         mms_media = MMSMedia(
             filename=filename,
@@ -49,7 +49,7 @@ def delete_media_file(filename=None):
 
 
 def fetch_all_media():
-    return MMSMedia.objects.all()
+    return map(lambda mms: mms.filename, MMSMedia.objects.all())
 
 
 def _twilio_client():

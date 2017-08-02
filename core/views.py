@@ -22,14 +22,14 @@ def config(_):
     return JsonResponse({'twilioPhoneNumber': os.getenv('TWILIO_NUMBER', '')})
 
 
+# /images/
 def get_all_media(_):
-    response = {'data': serializers.serialize('json', fetch_all_media())}
-    return JsonResponse(response)
+    return JsonResponse({'data': fetch_all_media()})
 
 
 # /images/:filename
 @csrf_exempt
-def delete_media_file(_, filename=None):
+def handle_delete_media_file(_, filename=None):
     try:
         media_content, mime_type = delete_media_file(filename)
         return HttpResponse(media_content, content_type=mime_type)
