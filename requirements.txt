@@ -3,7 +3,7 @@ chardet==3.0.4
 Django==1.11.3
 idna==2.5
 PyJWT==1.5.0
-PySocks==1.6.7
+PySocks==1.7.1
 pytz==2017.2
 requests==2.18.1
 six==1.10.0
