@@ -6,6 +6,6 @@ PyJWT==1.5.0
 PySocks==1.6.7
 pytz==2017.2
 requests==2.18.1
-six==1.10.0
+six==1.16.0
 twilio==6.4.2
 urllib3==1.21.1
