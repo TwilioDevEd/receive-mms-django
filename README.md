@@ -56,6 +56,10 @@ To run the app locally:
    You will also need a `TWILIO_PHONE_NUMBER`, which you may find
    [here](https://www.twilio.com/console/phone-numbers/incoming).
 
+   Note: To run using production environment use `cp .env.production.example .env` and follow
+   previous steps
+
+
 1. Load your environment configurations into your shell session
 
    ```bash
