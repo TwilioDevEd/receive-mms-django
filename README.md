@@ -109,6 +109,9 @@ To run the app locally:
 
 That's it
 
+*Note:* To enable debug logs in local environment, set the `DEBUG` variable to `True` in the `developemt.py` file
+
+
 ## How to Demo
 
 1. Send an MMS to your twilio number
