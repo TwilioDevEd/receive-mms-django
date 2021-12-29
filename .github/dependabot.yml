@@ -1,0 +1,22 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: twilio
+    versions:
+    - 6.51.1
+    - 6.52.0
+    - 6.53.0
+    - 6.54.0
+    - 6.55.0
+    - 6.56.0
+  - dependency-name: pyjwt
+    versions:
+    - 2.0.1
+  - dependency-name: pytz
+    versions:
+    - "2020.5"
