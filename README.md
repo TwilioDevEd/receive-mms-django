@@ -103,7 +103,8 @@ To run the app locally:
    http://6b5f6b6d.ngrok.io/incoming/
    ```
 
-   ![Configure Webhook](http://howtodocs.s3.amazonaws.com/twilio-number-config-all-med.gif)
+   [Learn how to configure a Twilio phone number for Programmable Voice](https://www.twilio.com/docs/voice/quickstart/python#configure-your-webhook-url)
+
 
 1. Check it out at http://localhost:8000
 
