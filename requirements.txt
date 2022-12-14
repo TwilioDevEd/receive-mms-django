@@ -11,5 +11,5 @@ twilio==6.4.2
 urllib3==1.26.7
 
 # Production dependencies
-dj-database-url==0.3.0
+dj-database-url==1.2.0
 gunicorn==19.3.0
