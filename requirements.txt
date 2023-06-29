@@ -7,7 +7,7 @@ PySocks==1.6.7
 pytz==2021.3
 requests==2.26.0
 six==1.10.0
-twilio==6.4.2
+twilio==8.4.0
 urllib3==1.26.7
 
 # Production dependencies
